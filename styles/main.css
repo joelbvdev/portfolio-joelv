@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* GENERAL */
+
+body{
+    height: 100vh;
+    background: #212529;
+}
+
+/* START STYLES HEADER */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 30px;
+    position: fixed;
+}
+
+
+.navbar h2{
+    color: #385DAD;
+    font-weight: 700;
+    font-size: 40px;
+    padding-left: 100px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-right: 95px;
+}
+
+div.navbar ul li a:hover{
+    color: #385DAD;
+}
+
+/* END STYLES HEADER */
+
+/* START STYLES MAIN */
+/* ABOUT ME */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+}
+
+.about h5{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.parrafo h3{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.parrafo p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.name{
+    color: #385DAD;
+}
+
+.nametwo{
+    color: #385DAD;
+    text-decoration: underline;
+}
+
+#boton-cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+
+}
+
+#boton-cv a{
+    text-decoration: none;
+}
+
+.download{
+    background-color: #385DAD;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.download:hover{
+    background-color: #2980b9;
+}
+
+
+/* ABOUT ME END */
+
+/* SKILLS STYLES START */
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section h4{
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.parrafo-skills {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    gap: 20px;
+}
+
+
+section p span{
+    color: #385DAD;
+    text-decoration: underline;
+}
+
+/* SKILLS STYLES END */
+
+/* ICONS SKILLS STYLES */
+
+.icons-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.icons-skills p{
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.icons-skills img{
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: auto;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ICONS SKILLS STYLES */
+
+/* ABOUT ME STYLES */
+
+#aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.text-lore{
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+.text-lore p{
+    color: #fff;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 80px;
+}
+
+.text-lore h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.div-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-top: 30px;
+}
+
+.div-img img{
+    max-width: 300px;
+    border-radius: 50%;
+    height: auto;
+}
+
+hr{
+    margin: 50px;
+}
+
+/* ABOUT ME STYLES */
+
+/* FOOTER STYLES */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pie{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+footer img{
+    margin-bottom: 16px;
+    text-align: center;
+    width: 20px;
+}
+
+/* FOOTER STYLES */
+
+/* FORM CONTACT STYLES */
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-contact h5{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.mb-3{
+    width: 50%;
+}
+
+.btn.btn-primary{
+    background: #385DAD;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* FORM CONTACT STYLES */
+/* FOOTER STYLES */
+
+
+/* MEDIA QUERYS */
+
+/* DESKTOP */
+
+@media screen and (max-width: 1280px) {
+    .navbar{
+        position: static;
+    }
+
+    .navbar h2{
+        margin-left: 300px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar{
+        position: static;
+    }
+}
+
+/* DESKTOP */
+
+/* TABLET */
+
+@media screen and (max-width: 1024px) {
+    
+    .navbar {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .navbar h2 {
+        font-size: 24px;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px; 
+        text-align: center;
+        margin-left: 90px;
+        font-size: 16px;
+    }
+}
+
+/* TABLET */
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+
+    .navbar h2{
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar{
+        position: static;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px; 
+        text-align: center;
+        margin-left: 70px;
+        font-size: 16px;
+    }
+
+    #skills{
+        flex-direction: column;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    #aboutme{
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .pie{
+        font-size: 10px;
+        flex-direction: column;
+    }
+}
+
+/* MOBILE */
