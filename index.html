@@ -5,115 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <title>Joel B. Vega | Portfolio</title>
 </head>
 <body>
 
     <header>
-        <div class="navbar">
-            <h2>Joel B. Vega Developer</h2>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#aboutme">Sobre Mi</a></li>
-                    <li><a href="#boton-cv">CV</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="https://github.com/joelbvdev">GitHub</a></li>
-                    <li><a href="#form">Contacto</a></li>
-                </ul>
-        </div>
-    </header>
-
-
-    <main>
-        <div class="about">
-            <h5>Hola, Soy<span class="name"> Joel</span> 👋</h5>
+      <div class="bg-h">
+        <div class="about" data-aos="fade-up">
+            <h5>Hi, I´m<span class="name"> Joel</span> 👋</h5>
               <div class="parrafo">
-                <h3>Desarrollador <span class="nametwo">FrontEnd</span> 💻</h3>
-                <p>"No es magia, es codigo"</p>
+                <h3><span class="nametwo">FrontEnd</span> Developer 💻</h3>
+                <div id="boton-cv">
+                  <a href="archivo/Curriculum-JoelVega-Dev.pdf"><input type="button" value="Download CV" class="download"></a>
+                </div>
               </div>
         </div>
-        <div id="boton-cv">
-          <a href="archivo/Curriculum-JoelVega-Dev.pdf"><input type="button" value="DESCARGAR CV" class="download"></a>
+      </div>
+      <div class="scroll-down">
+        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M18 13l-6 6" /><path d="M6 13l6 6" /></svg>
+      </div>
+    </header>
+
+    <main>
+      <section id="skills">
+        <h4>Skills 🧩</h4>
+          <div class="icons-skills">
+            <div class="icons">
+              <p>HTML 5</p>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAABSZJREFUeF7tnUF20zAQhsdOD9Lewru2R+AFdgTak9CehEDY0TyO0HTnW5CDlJinxHnQUKwZ6x+PnEy3kT3SfBpJ80tyC/I/Uw8UptbdODkA407gAByAsQeMzXsEOABjDxib9whwAMYeMDbvEeAAjD1gbN4jYOwAqtnyhog+G7fDxnxB9/XX6V2K8eQIOGkARLf1Yjq3BfD++xUV5WNKJUb7bLO5rr+9W6XUPz0Cbn6c06/Nz5RKjPbZSXlRz9+sU+qfDCAYr2bLJqUSY322XkyT/Zf8ghZAiIDzsTqyb70dQF/PYZ5b14vpReqrQBHw8EhUXKVWZmTPOwBbYM2qXry9Tq0DKAKWIRELCdkp/c3rxfQ2tcEOoK8HAVlwMI0CcHpyhAPo23VhzyXLELgIkMgRBd3TZpOUvsNcePiiogy5DE9YBMgQNgAAApYWAJGwmBUAmR4ECV0NCNWH5R019InzbkQWDIsAoR4EWb5xnCQtM3YAXD0oXwAzdj4DyYLREcAEgMkgpb2bU76asSWVHAFwK38MAHBtgCRi7RzAlSNgvYfTqyVlqtmSGcUEG0YtAFBsBdE6QuI7VFnengYoC0bPAXw5IrKVJ+iJKMfL3uMAZP5SKA3LZXBDkESOiGSR2UcAKAvGDkESABE5QrAcVOjcjFdmCQAoR1T8hIjhLYUigOMo+1rBhiCRHBGZxHIHEFvFSZCjAUDW0SJVUtJaTFloHpMngDCcPT/z1uQYpxIV5UfmvnbOAMYrR/AnfpwMAV0FjV2OECx9YTKEJYCoHIEaWbjvYZ9vBWbBeAAGO0pcB8fKHQcAyW0Z4Fo65tzY75Ukh8k6AsYKAJjFx2Af/o5dhkoaAkznpY0+LF8Z1hsLQBLK1Ax3Nqgonrou04kSP/DQCQUgkiNSu63k+Zj0Ybh40ADAlSMkLkwr6wDS/Ad4unMDhZ8FE1SGgOcBuyGIL0fQZPL/8/WbzQ33lFoUUHQDiFvnUQDAHG4SrUxiBKIAuKchsDqQUgSwAXTKEUgAMf2enQUT7jiKyobMdggCrShE2WkkAroAiOyAs2CtCEAeT0FcAO+cOB1Ax1V/gUTcFQPdACRZsMLdBnweIGlQfHIMxx3D/eP+u2OxHECiXynIJ3gAIjmC97mX7YRcllfUNJdERYDRBSR8PuaJJuWK8yENyZxFYBlCZQ4QyhG9TpgdANl9raTZfOnz6RgJgNhqKrYafu13eASIACisKqROOFYAXD0Iur8qdb4sc8dnwZpDkANg9galIYirrTSroAdxJktme8TF+FkwXobQjADubZnWYc2KiuJpe4H77GytCaTdfLnssbxVGS6VIoCvB73eZXFAEhz+smpKCwYtAHw5gjVotEDKch6LjlbEC3lC6OW4T+icNoAXlNZEzZqa5n4/XMF6eXdn6JWzxPqXTgRI5IhYDXP5XUGG0JuEHQC72+hEgEwPYlfWtKCCDqQWASI5wtSrfOMaOpA2AG42zPeCXUn4aYh9U1SGoDYCHACjw2gCSN9MYTRgkCJKOYDqELR3TJsYhftXaTtbg3j6hZHtxk7q/weIVVstAl4zLNzZitUd/btoJw1lfFAAh5X+A4RChPTf9+3njbCTtuq7k9bP5L9PmQL4uzoDRYdJL++ClQ0ApejY/X+XnvvFqF4+SgAJ0ZFdLx89gEh07G7aZNzLjw7AEEPDUDaynQOGcoC1HQdgTMABOABjDxib9whwAMYeMDbvEeAAjD1gbN4jwAEYe8DYvEeAMYDfURzkf/DDRuEAAAAASUVORK5CYII="/>
+            </div>
+            <div class="icons">
+              <p>CSS 3</p>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAABUBJREFUeF7tnEFW2zAQhseGg8AtvAOO0Jd21xQ4SeEkDU13bV6PQNj5Fs1FGrdKHMijtTRj/ZORiNgylibzaSTNL9kVlT/TCFSmvZfOqQAwHgQFQAFgHAHj7ksGFADGETDuvmRAAWAcAePuSwYUAMYRMO6+ZEDuAJqbn2f0e31p/Dtsuj+pl+3s3Sqm8+gM6AH8inEi22dP6nNzAC54zXTRZRvECMfb+SR6AEc30ANwGXAW8VuyfLQAsMW2aueT81gXQBnw45GoOraFuACIHX1xz3fLdv7+Kq4NwhzINNPFFyK6iXUms+dn7XxyG+szaAo6QgAV3bdfJ3epAHCj32XB8fwVAOasb9v5ZBbrBWYK+vj9kqr6MdaZrJ7v1lfttw/LWJ8LgLERBMgQrmsMgK0gx9WDVkRdlIA1Nma853j1DKIKhgEQ6kGQuZMXTJlV82lxRx195jyVIgCuHgTZP3OCJLURAIBUwegMyB8Av6BMEQBXD8KU8NLRzbFvpof/DZBFuF8DmHJEygAWB89iAwAES1/OqJbYsA+WQFUweg1gyxGoHYQkuBzbowFAFd1zAgK3qevZ0Bmu8GwbtpXGTUEZyBG+zBMBAMkQ2CkodwAS/5MEIJMj4LMLo0Hv4t9MF+w1jEA6EDQDhHIEI15oE//2V1AFE3ITAVsDegDcfTQ6upz2vBKIAAB0G308AAJ7d8G5dsoAuKU8Z8CCbYIAuL5jK3l0BjDlCFZw3ZlB9InTXk9PviPEZnp4GUJjEQYCwI60EHKLKhgPQHCgEQoIUQEQjtErC9FeOtw6dLHzdSeqgoFCHD4DJMVMGAB0vw0DAKyC8QAk5TwDALLi9AKQ+J00ALQcASz5vQAkmQv2CboNhcsR4NE2BEFQBcOnRQ0AQDmiA9UBlVvQB28yFwCc9SDOxq8DGdyG2P0chQzglvRxERU9nagMAd8F9WsAsBoWhXnYOAiAK0Pgi0OFDGC/rOG0Ht/Z8AXsrZvAYs6WIYjgt/rwAARyhPeMVrI3DyUKCgC4CtaagiBHew0QAOww/pgAIGsKGAAi2HUUvV2QZOQGqkrB3OybhPyH8RJ/FQpD/BogkSPCczOiqEvyNoRaBginDm9K97eV3TcoYr5D4e8DtGkI7QOG/g/PACSAndP9gnz994jSfQ6BA8O9veg9gnxu+40C4E0dI3YVGxh1fUldd0FU7bJjE3Aa8QElq9sQ2lMQD4BCYSOdCvgvZehcq1eagth6ELyylAOwkyFUCjGZHoTXVkYA4H7tS2WwKGUAWw8id/uBquqJ1uslnZ6uYr/BxgXQXyBw5rxvXIxYrzi+aAHgyxH/eNktqevuNWD0QXciH3c39eLd8QDYJ+JOxKqHMbubfirsv2HUXQO+6AWXIfTWAEl5z8nTjU0/VXleM9oL+rhR7vNFQYbIDMCrzNitG1XdF2aQUT6MICsAEj2InQG2hsiXMvZ/icoiLJQjbCPL7D1HANxqmBkCUzO1e6qaGVAAMMaMIgC2HMFw09pEr2JXBCCphq0DHOxfRYZQ24ZuFuGtzu40fI5+H4yAsYFKEaYKYBewEYcpxrF+7p59qBPjsNoU9D+nBg5TYvxHPjv6UCfGiYMCeO3oCxCzqWpG3foB8f3PsRBMAew7faDsMBnlPjjJAFDKju27xsajPEsAEdmR3CjPHkAgO7Zv0SQ8yt8cgLELXorPJbsGpBgsDZ8KAI2oCtosAATB0jAtADSiKmizABAES8O0ANCIqqDNAkAQLA3TAkAjqoI2CwBBsDRMCwCNqAraLAAEwdIw/QP2eOF/ihns0AAAAABJRU5ErkJggg=="/>
+            </div>
+            <div class="icons">
+              <p>JavaScript</p>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA+1JREFUeF7tnEFy2kAQRVtwEXwLLc0RUiS7kMBJYp/EOGSXUDmCtdQtwkGMlBoJE4FmenqMq76lfG0j1OE//Z7unsGZ8IIqkEGjM7gQAPglIAACACsADk8HEABYAXB4OoAAwAqAw9MBBABWAByeDhgagHy5q8H/53cdvtwukl7qpJvdNycAnT8BgP1BAAQAVgAcng4gALAC4PB0AAGAFQCHpwMIAKwAODwdQABgBcDh6QACACsADk8HEABYAXB4OoAAwAqAw9MBBABWAByeDiAAsALg8HQAAYAVAIenAwgArAA4PB1AAGAFwOHpAAIAKwAOTwcQAFiB9PB7ESn+fayeiWS36Y9pPzF+B2RyL5PJxivQoXoSkZlBvL1k8lh+X9yF7s1Xv2dSVSup5Zvheadbxg9AZF1uF14A+XL3Jwogk3tN+EuxGxCHykFYWUAQgOaAupqXPz510o1FUpEUNxBAGEDQORYMrRMOD7H1gQACAFKF8UE5piOX5oJXapwh/kjvNWuA+vZ3UsxeppOi3HxwlVHvyr/s7mKLMgF4HKCJki9/PV2klV6FdHzzTRUWASQAyJc7V9k8ePPJsVqyvPXdzxNAH8C+3C5uXpFSXtKQpa9gH+AUCPQBYQCff95KNnGp5c0uOiDFAcbSMoUOAfjKUKUBS2myLCAIwNsH1EW5/TjXBOyA+BodZ7APSJ4Fufp+Hqrvu3oeS043DXXzn6QF2D2HDgiLFlyMla43GQQB6G9tEoSmskocSxNANG3UhUyna0s68qSmaDdMAFEAjazRDRkO48KVxmuGcaGnNSDcDpvVEer4gouwYUfMj6LdF66rR8uGjWeAx1GEMoqw9E/de6Ila66MMLgG2NaAGBR1jdA2ZgjgbQC0C3VdrUMpKfTXIwlAA+COtLjLftQkecEfNgAnUFUV6oh4OrkJbhkGj6Wc1/7mTRZtiBeINVAAdoH07cXeX/X1phHbWR99gDeWFBQWqH8qLZaTe9uLsbcxACLapGm9QCzm5eqPPRWhpJPTHOb5uZlIxurzfLlze7vnp9eMp+AaEMfL0pCNqA+Iz+lj9eLLv4e2I7VKxvrss5lQZBtzWA5ov9lVJ9baBqx3tCSpsbKCsJyOGyKAaM7VBDJWNFfFOKXDUR9NNObrs3RgOKl2AW9jnfecUtt/th9gelOPb/01e7ftFLSqCt/iftqWzGSW0LQ1zIaYgsKj4rNfrjQt7FW/XlFSWfcsaPI+cPe5YwJgXRvf1X0EAMZBAAQAVgAcng4YOwDw9xtd+ORh3OgUAH8hAiAAsALg8HQAAYAVAIenAwgArAA4PB1AAGAFwOHpAAIAKwAO/xdZGxqO1iH0UAAAAABJRU5ErkJggg=="/>
+            </div>
+            <div class="icons"> 
+              <p>Bootstrap</p>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAABHBJREFUeF7tnU120zAQx8dOD1Ju4R3tEXiBHaHtSaAnaUrYQR5HaLrzLTD3aG2QnLRpYsn6GGVi5+/32FDHI89vZiTNSHJGuEQ1kIlKh3ACAGEjAAAAENaAsHh4AAAIa0BYPDwAAIQ1ICweHgAAwhoQFg8PGBOA4vr3OdX1NTXNe6LsnIjUv6FfVfsCTUWU3dMkX5XzD+v/i381Fg94VTx9jW/S0T+hoozuKc/nHCCiARSff15Qlj8cvdr4G6hBlN+n32IeHQWgmC2viegupgED/200hGAAJ2z5uzZTUVPflD8+rUKMKRzAbNmECBzpbyqa5JchfUIQgGK2VGFHhR9crxqYl4vpja9CQgHA+vc1HRSKvAGg47XYeEa3vqOiEAAIP0YGzapcfLz0CUMhAP6MZIbroyfXe6tyMX3nerO6LwQA4r9ZwwDgY30p7i0XUy+j9rpZNbjA+N/KDQBSmLXHM4cGQKV1g6bwZp006xR4duGhN7ZbhwUgYNzsoymdJleXrlEcJlUOAAZCWzWLq5TDaADocZHUxSMAcIhRGsJzrap37AlFAHAAoIfTLQRVyWOtW48KwDrx56hSVTevdbHctTiSIrE4GgBrC1V5p5DLqXAeKaOzXQDwVi29uZli9uuBiG/OAAD7dmmtVAGAYVkHY3iwegF3eRUesO8BAGDsRS2pCEYPIJrk70wrFhCC0ocgsoWFYrZkrfAhBHl0wikWlwHALoCmvjRNzLg7YD0JHFRFLH0fcFMupvOuPoi1j9kSAACtMqyLpFIpf3we8PTklyg7O6v61memVP6oAIQkgGy/SZmC3pY7mhCUBEBbmkRF7EW5iWvCJojr4adaYukX4hysAh7goCQUZDZK6vGA4svSf/9Vo0dAFbl3yKxVsVF5AMMqvDlN8lvbyIh7NgwAHdnQ/4uQb+0Tsuc7rqIMAHT3AdY9XJy1YQAwdcLp0x5aMgAYR0Hm3Sucs2MAMA9D+ypjLHUBALDMA+yFGZ7VEQBgBtCzOoKnMgYA4QBY9r4BgAmAtTDPd+gIAHQDMFbGdF6I8dQXAHgLwOn4AM7a8NgA+J9FlNFfzaCuVy6rpDnnAKObiDlmlqNuw8KsyCO/YrTPGXo27RhVCIpRrlR9GAB6qHHn/3fFAUAHgNQ7I7dFDgsAkVq19sgaarKtQnt7gOxBd8wPDQCr7o/hYQAgTAEATgAAS+FCWE+pxPfuytwVHHBgE0/hIpUGhJ/rfXZoAAC+1K2wslKIt2ZduwT6A2jPWAjdwZ7ipY/nmZaag6mR3gDW+XOcHbqvUe/wox4RBgBesK/+AOsPBqC94HQ/3LCvfMtGwL74GOQBm4fq1csHOout70UE/+7d8W63NQrAyXtChOVvIEQD0BBevp50mJMJBa29Fc24s4cFwEtIajvnC6LmakSfsVKvV+nPWGXZI9fXk1g9QNwiB9wAVg8YsB7Emg4AYqrfdCfCDTh18fAAYQsAAAAQ1oCweHgAAAhrQFg8PAAAhDUgLB4eIAzgH5U6FY5wTX/NAAAAAElFTkSuQmCC"/>
+            </div>
+            <div class="icons"> 
+              <p>React Js</p>
+              <img src="data:image/png;base64,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"/>
+            </div>  
         </div>
-    </main>
+      </section>
 
+      <section>
+          <h4>Proyects 📂</h4>
+            <div class="pj-1">
+              <h5>Coderhouse Final Project</h5>
+                <div class="pj-1-img">
+                  <img src="img/pj-1.png" alt="">
+                </div>
+                <a href="https://github.com/joelbvdev/proyecto-coder-joelvega">Link Github with Page</a>
+                <p>HTML - CSS - BOOTSTRAP - SASS</p>
+            </div>
+      </section>
 
-    <section id="skills">
-        <h4>Habilidades</h4>
-          <div class="parrafo-skills">
-            <p>Domino tecnologías clave en el desarrollo web como <span>HTML, CSS y JavaScript</span>, que me permiten crear páginas web estructuradas, estilizadas y dinámicas.</p> 
-            <p>Utilizo <span>Bootstrap</span> para acelerar el diseño responsivo y asegurar una experiencia de usuario óptima en diferentes dispositivos.</p> 
-            <p>Además, con <span>React JS</span>, desarrollo interfaces interactivas y eficientes, creando aplicaciones web escalables y de alto rendimiento.</p>
-          </div>
-    </section>
-
-
-    <div class="icons-skills">
-        <div class="icons">
-            <p>HTML 5</p>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAABSZJREFUeF7tnUF20zAQhsdOD9Lewru2R+AFdgTak9CehEDY0TyO0HTnW5CDlJinxHnQUKwZ6x+PnEy3kT3SfBpJ80tyC/I/Uw8UptbdODkA407gAByAsQeMzXsEOABjDxib9whwAMYeMDbvEeAAjD1gbN4jYOwAqtnyhog+G7fDxnxB9/XX6V2K8eQIOGkARLf1Yjq3BfD++xUV5WNKJUb7bLO5rr+9W6XUPz0Cbn6c06/Nz5RKjPbZSXlRz9+sU+qfDCAYr2bLJqUSY322XkyT/Zf8ghZAiIDzsTqyb70dQF/PYZ5b14vpReqrQBHw8EhUXKVWZmTPOwBbYM2qXry9Tq0DKAKWIRELCdkp/c3rxfQ2tcEOoK8HAVlwMI0CcHpyhAPo23VhzyXLELgIkMgRBd3TZpOUvsNcePiiogy5DE9YBMgQNgAAApYWAJGwmBUAmR4ECV0NCNWH5R019InzbkQWDIsAoR4EWb5xnCQtM3YAXD0oXwAzdj4DyYLREcAEgMkgpb2bU76asSWVHAFwK38MAHBtgCRi7RzAlSNgvYfTqyVlqtmSGcUEG0YtAFBsBdE6QuI7VFnengYoC0bPAXw5IrKVJ+iJKMfL3uMAZP5SKA3LZXBDkESOiGSR2UcAKAvGDkESABE5QrAcVOjcjFdmCQAoR1T8hIjhLYUigOMo+1rBhiCRHBGZxHIHEFvFSZCjAUDW0SJVUtJaTFloHpMngDCcPT/z1uQYpxIV5UfmvnbOAMYrR/AnfpwMAV0FjV2OECx9YTKEJYCoHIEaWbjvYZ9vBWbBeAAGO0pcB8fKHQcAyW0Z4Fo65tzY75Ukh8k6AsYKAJjFx2Af/o5dhkoaAkznpY0+LF8Z1hsLQBLK1Ax3Nqgonrou04kSP/DQCQUgkiNSu63k+Zj0Ybh40ADAlSMkLkwr6wDS/Ad4unMDhZ8FE1SGgOcBuyGIL0fQZPL/8/WbzQ33lFoUUHQDiFvnUQDAHG4SrUxiBKIAuKchsDqQUgSwAXTKEUgAMf2enQUT7jiKyobMdggCrShE2WkkAroAiOyAs2CtCEAeT0FcAO+cOB1Ax1V/gUTcFQPdACRZsMLdBnweIGlQfHIMxx3D/eP+u2OxHECiXynIJ3gAIjmC97mX7YRcllfUNJdERYDRBSR8PuaJJuWK8yENyZxFYBlCZQ4QyhG9TpgdANl9raTZfOnz6RgJgNhqKrYafu13eASIACisKqROOFYAXD0Iur8qdb4sc8dnwZpDkANg9galIYirrTSroAdxJktme8TF+FkwXobQjADubZnWYc2KiuJpe4H77GytCaTdfLnssbxVGS6VIoCvB73eZXFAEhz+smpKCwYtAHw5gjVotEDKch6LjlbEC3lC6OW4T+icNoAXlNZEzZqa5n4/XMF6eXdn6JWzxPqXTgRI5IhYDXP5XUGG0JuEHQC72+hEgEwPYlfWtKCCDqQWASI5wtSrfOMaOpA2AG42zPeCXUn4aYh9U1SGoDYCHACjw2gCSN9MYTRgkCJKOYDqELR3TJsYhftXaTtbg3j6hZHtxk7q/weIVVstAl4zLNzZitUd/btoJw1lfFAAh5X+A4RChPTf9+3njbCTtuq7k9bP5L9PmQL4uzoDRYdJL++ClQ0ApejY/X+XnvvFqF4+SgAJ0ZFdLx89gEh07G7aZNzLjw7AEEPDUDaynQOGcoC1HQdgTMABOABjDxib9whwAMYeMDbvEeAAjD1gbN4jwAEYe8DYvEeAMYDfURzkf/DDRuEAAAAASUVORK5CYII="/>
-        </div>
-        <div class="icons">
-            <p>CSS 3</p>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAABUBJREFUeF7tnEFW2zAQhseGg8AtvAOO0Jd21xQ4SeEkDU13bV6PQNj5Fs1FGrdKHMijtTRj/ZORiNgylibzaSTNL9kVlT/TCFSmvZfOqQAwHgQFQAFgHAHj7ksGFADGETDuvmRAAWAcAePuSwYUAMYRMO6+ZEDuAJqbn2f0e31p/Dtsuj+pl+3s3Sqm8+gM6AH8inEi22dP6nNzAC54zXTRZRvECMfb+SR6AEc30ANwGXAW8VuyfLQAsMW2aueT81gXQBnw45GoOraFuACIHX1xz3fLdv7+Kq4NwhzINNPFFyK6iXUms+dn7XxyG+szaAo6QgAV3bdfJ3epAHCj32XB8fwVAOasb9v5ZBbrBWYK+vj9kqr6MdaZrJ7v1lfttw/LWJ8LgLERBMgQrmsMgK0gx9WDVkRdlIA1Nma853j1DKIKhgEQ6kGQuZMXTJlV82lxRx195jyVIgCuHgTZP3OCJLURAIBUwegMyB8Av6BMEQBXD8KU8NLRzbFvpof/DZBFuF8DmHJEygAWB89iAwAES1/OqJbYsA+WQFUweg1gyxGoHYQkuBzbowFAFd1zAgK3qevZ0Bmu8GwbtpXGTUEZyBG+zBMBAMkQ2CkodwAS/5MEIJMj4LMLo0Hv4t9MF+w1jEA6EDQDhHIEI15oE//2V1AFE3ITAVsDegDcfTQ6upz2vBKIAAB0G308AAJ7d8G5dsoAuKU8Z8CCbYIAuL5jK3l0BjDlCFZw3ZlB9InTXk9PviPEZnp4GUJjEQYCwI60EHKLKhgPQHCgEQoIUQEQjtErC9FeOtw6dLHzdSeqgoFCHD4DJMVMGAB0vw0DAKyC8QAk5TwDALLi9AKQ+J00ALQcASz5vQAkmQv2CboNhcsR4NE2BEFQBcOnRQ0AQDmiA9UBlVvQB28yFwCc9SDOxq8DGdyG2P0chQzglvRxERU9nagMAd8F9WsAsBoWhXnYOAiAK0Pgi0OFDGC/rOG0Ht/Z8AXsrZvAYs6WIYjgt/rwAARyhPeMVrI3DyUKCgC4CtaagiBHew0QAOww/pgAIGsKGAAi2HUUvV2QZOQGqkrB3OybhPyH8RJ/FQpD/BogkSPCczOiqEvyNoRaBginDm9K97eV3TcoYr5D4e8DtGkI7QOG/g/PACSAndP9gnz994jSfQ6BA8O9veg9gnxu+40C4E0dI3YVGxh1fUldd0FU7bJjE3Aa8QElq9sQ2lMQD4BCYSOdCvgvZehcq1eagth6ELyylAOwkyFUCjGZHoTXVkYA4H7tS2WwKGUAWw8id/uBquqJ1uslnZ6uYr/BxgXQXyBw5rxvXIxYrzi+aAHgyxH/eNktqevuNWD0QXciH3c39eLd8QDYJ+JOxKqHMbubfirsv2HUXQO+6AWXIfTWAEl5z8nTjU0/VXleM9oL+rhR7vNFQYbIDMCrzNitG1XdF2aQUT6MICsAEj2InQG2hsiXMvZ/icoiLJQjbCPL7D1HANxqmBkCUzO1e6qaGVAAMMaMIgC2HMFw09pEr2JXBCCphq0DHOxfRYZQ24ZuFuGtzu40fI5+H4yAsYFKEaYKYBewEYcpxrF+7p59qBPjsNoU9D+nBg5TYvxHPjv6UCfGiYMCeO3oCxCzqWpG3foB8f3PsRBMAew7faDsMBnlPjjJAFDKju27xsajPEsAEdmR3CjPHkAgO7Zv0SQ8yt8cgLELXorPJbsGpBgsDZ8KAI2oCtosAATB0jAtADSiKmizABAES8O0ANCIqqDNAkAQLA3TAkAjqoI2CwBBsDRMCwCNqAraLAAEwdIw/QP2eOF/ihns0AAAAABJRU5ErkJggg=="/>
-        </div>
-        <div class="icons">
-            <p>JavaScript</p>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA+1JREFUeF7tnEFy2kAQRVtwEXwLLc0RUiS7kMBJYp/EOGSXUDmCtdQtwkGMlBoJE4FmenqMq76lfG0j1OE//Z7unsGZ8IIqkEGjM7gQAPglIAACACsADk8HEABYAXB4OoAAwAqAw9MBBABWAByeDhgagHy5q8H/53cdvtwukl7qpJvdNycAnT8BgP1BAAQAVgAcng4gALAC4PB0AAGAFQCHpwMIAKwAODwdQABgBcDh6QACACsADk8HEABYAXB4OoAAwAqAw9MBBABWAByeDiAAsALg8HQAAYAVAIenAwgArAA4PB1AAGAFwOHpAAIAKwAOTwcQAFiB9PB7ESn+fayeiWS36Y9pPzF+B2RyL5PJxivQoXoSkZlBvL1k8lh+X9yF7s1Xv2dSVSup5Zvheadbxg9AZF1uF14A+XL3Jwogk3tN+EuxGxCHykFYWUAQgOaAupqXPz510o1FUpEUNxBAGEDQORYMrRMOD7H1gQACAFKF8UE5piOX5oJXapwh/kjvNWuA+vZ3UsxeppOi3HxwlVHvyr/s7mKLMgF4HKCJki9/PV2klV6FdHzzTRUWASQAyJc7V9k8ePPJsVqyvPXdzxNAH8C+3C5uXpFSXtKQpa9gH+AUCPQBYQCff95KNnGp5c0uOiDFAcbSMoUOAfjKUKUBS2myLCAIwNsH1EW5/TjXBOyA+BodZ7APSJ4Fufp+Hqrvu3oeS043DXXzn6QF2D2HDgiLFlyMla43GQQB6G9tEoSmskocSxNANG3UhUyna0s68qSmaDdMAFEAjazRDRkO48KVxmuGcaGnNSDcDpvVEer4gouwYUfMj6LdF66rR8uGjWeAx1GEMoqw9E/de6Ila66MMLgG2NaAGBR1jdA2ZgjgbQC0C3VdrUMpKfTXIwlAA+COtLjLftQkecEfNgAnUFUV6oh4OrkJbhkGj6Wc1/7mTRZtiBeINVAAdoH07cXeX/X1phHbWR99gDeWFBQWqH8qLZaTe9uLsbcxACLapGm9QCzm5eqPPRWhpJPTHOb5uZlIxurzfLlze7vnp9eMp+AaEMfL0pCNqA+Iz+lj9eLLv4e2I7VKxvrss5lQZBtzWA5ov9lVJ9baBqx3tCSpsbKCsJyOGyKAaM7VBDJWNFfFOKXDUR9NNObrs3RgOKl2AW9jnfecUtt/th9gelOPb/01e7ftFLSqCt/iftqWzGSW0LQ1zIaYgsKj4rNfrjQt7FW/XlFSWfcsaPI+cPe5YwJgXRvf1X0EAMZBAAQAVgAcng4YOwDw9xtd+ORh3OgUAH8hAiAAsALg8HQAAYAVAIenAwgArAA4PB1AAGAFwOHpAAIAKwAO/xdZGxqO1iH0UAAAAABJRU5ErkJggg=="/>
-        </div>
-        <div class="icons"> 
-            <p>Bootstrap</p>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAABHBJREFUeF7tnU120zAQx8dOD1Ju4R3tEXiBHaHtSaAnaUrYQR5HaLrzLTD3aG2QnLRpYsn6GGVi5+/32FDHI89vZiTNSHJGuEQ1kIlKh3ACAGEjAAAAENaAsHh4AAAIa0BYPDwAAIQ1ICweHgAAwhoQFg8PGBOA4vr3OdX1NTXNe6LsnIjUv6FfVfsCTUWU3dMkX5XzD+v/i381Fg94VTx9jW/S0T+hoozuKc/nHCCiARSff15Qlj8cvdr4G6hBlN+n32IeHQWgmC2viegupgED/200hGAAJ2z5uzZTUVPflD8+rUKMKRzAbNmECBzpbyqa5JchfUIQgGK2VGFHhR9crxqYl4vpja9CQgHA+vc1HRSKvAGg47XYeEa3vqOiEAAIP0YGzapcfLz0CUMhAP6MZIbroyfXe6tyMX3nerO6LwQA4r9ZwwDgY30p7i0XUy+j9rpZNbjA+N/KDQBSmLXHM4cGQKV1g6bwZp006xR4duGhN7ZbhwUgYNzsoymdJleXrlEcJlUOAAZCWzWLq5TDaADocZHUxSMAcIhRGsJzrap37AlFAHAAoIfTLQRVyWOtW48KwDrx56hSVTevdbHctTiSIrE4GgBrC1V5p5DLqXAeKaOzXQDwVi29uZli9uuBiG/OAAD7dmmtVAGAYVkHY3iwegF3eRUesO8BAGDsRS2pCEYPIJrk70wrFhCC0ocgsoWFYrZkrfAhBHl0wikWlwHALoCmvjRNzLg7YD0JHFRFLH0fcFMupvOuPoi1j9kSAACtMqyLpFIpf3we8PTklyg7O6v61memVP6oAIQkgGy/SZmC3pY7mhCUBEBbmkRF7EW5iWvCJojr4adaYukX4hysAh7goCQUZDZK6vGA4svSf/9Vo0dAFbl3yKxVsVF5AMMqvDlN8lvbyIh7NgwAHdnQ/4uQb+0Tsuc7rqIMAHT3AdY9XJy1YQAwdcLp0x5aMgAYR0Hm3Sucs2MAMA9D+ypjLHUBALDMA+yFGZ7VEQBgBtCzOoKnMgYA4QBY9r4BgAmAtTDPd+gIAHQDMFbGdF6I8dQXAHgLwOn4AM7a8NgA+J9FlNFfzaCuVy6rpDnnAKObiDlmlqNuw8KsyCO/YrTPGXo27RhVCIpRrlR9GAB6qHHn/3fFAUAHgNQ7I7dFDgsAkVq19sgaarKtQnt7gOxBd8wPDQCr7o/hYQAgTAEATgAAS+FCWE+pxPfuytwVHHBgE0/hIpUGhJ/rfXZoAAC+1K2wslKIt2ZduwT6A2jPWAjdwZ7ipY/nmZaag6mR3gDW+XOcHbqvUe/wox4RBgBesK/+AOsPBqC94HQ/3LCvfMtGwL74GOQBm4fq1csHOout70UE/+7d8W63NQrAyXtChOVvIEQD0BBevp50mJMJBa29Fc24s4cFwEtIajvnC6LmakSfsVKvV+nPWGXZI9fXk1g9QNwiB9wAVg8YsB7Emg4AYqrfdCfCDTh18fAAYQsAAAAQ1oCweHgAAAhrQFg8PAAAhDUgLB4eIAzgH5U6FY5wTX/NAAAAAElFTkSuQmCC"/>
-        </div>
-        <div class="icons"> 
-            <p>React Js</p>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAACyBJREFUeF7tXduLJNUZ/53qCblAwAcfAoE4mz/C7RFldyE3khd3eseQsD3uPvvghsSXJKADMRA0ZH3w2ZnpIURnezYPGiQJ2Ivi9PpHmFYS8CEPgUAuxKkTzqmq7nO/VVWXjtUvys7p+k59v/Ndzvf9zmmC/tOpBkin0nvh6AHoeBH0APQAdKyBjsX3FtAD0LEGOhbfW0APQMca6Fh8JxYwHE9vgGATFA/x9yf4AHk+w8bGYr5/ddG2Trj84nOJy2afPJ/Nj3ZmbctWn79WAIbXjy+DZK8A2LS/KJ2B0r2mlVEq/RKASvmGKbQj2wXq2gAoFcCUH/hpRhkF6ORZgFwOFMwscm9+OHoueHyNgWsBoFz5bxnmuQ/QTYAwi7BYBZ1hMLgZ65qGN+5u4uzsFbfiaelyDPJpfqVpKzTh1DoAhSLyvyjCb84no33x3/i4PL8BiictYGjfsS08h7Wx+LKHQTZTAR3uTp9TZC8wyK7EAh9rDO0DULzYs8uJBaysUoHsO7JVEOwhy/ZdShmO77xlWfVeAEsQVnNdgytqH4DxlK3+SpGL+WR0IXSVDMdTFjOUoGl2SQ6Xsz+fjG6GyxQBpLP55NqV0O+mjGsVAM39JKwoizVI7sESYxag+c1YP665r0F2oU031C4ARdq5DL7zyShJXgkke47skgbZBXz88aYoo1iF9VbucDylwmr2uq6UlV99J0khoQIVnxrlfkwyzC5JHVlP+expQ9ltnhcA6iuGK0cN6qL+E1ycGWgpkEfFkNDFuR4LkIJoMwCwiW9dnx5TgmuS7gl56fRw+1asAj5DAKCRlWTZVzA9Npa3K66ukXnbFka7MaAFC3Dk+Y2BoMjoAahWj658OgMh96SNXgNxQJLTwPNcbrFdC5ADZq0sSA++q5iiZC21i2nS8z7VABR191UFNHFTY9hoaWBqIASUPBy1pNU+4FMNgLIRQwIAhqBrtCTjZq0JeTWADMnIWnVB5aam1q5S8/sOhRgaPtGZkWptqbv3EOWzMesAYFWMizRnVfmEkJdoRm7z8gOffbYJmq9amBsbC5LTW5TSp5cKiJXZYNwKAWEdAAgVTftmrFx5TLGsbchWxuMUeCDkJbxjCBagdFFmTKxIt7D1n2XQm9s8drIPKF2QHIiBqjTMFF21CR09Yq966wxYAHQBkMWSGCAUD9fRmmzdArbG01sU+E0dLXX1XQL86HQyut2m/FYAKHN2RjlxMBCMr8VWIkClsvOboPmv+OiNDYmyUtXpeQZUfar4UASJGyCEtTiLD3dF/P9iLK6ykgO1jdoEMI0BIPR0Vy099wz3udlTXsPhPdrQlDPmxbX9QZmaclkMrCy7DEovuYkBS4lsAcxA84PYRk9rMaBUGlO6fbVT/B0EDy4nYUklY1LOUBC0DpclK9I2e+qcdYFJHTf1MckWEED7YO7kgDXRuVCRGWFQgmG321gRTGvkGBaAOobl/yur5hZi4xVF7zVEEJIAcDRFlkrXaB8yW8FUShA3bLXqRuoqM+ySNaUprkoD3+Ni+XunkLmiAbCUg70T0E18RXxKoYPs7Lw2+PBz2deZsr/2v/z94+MnzlxuySXDNTcjmAV/yRTrohdOMABWlxOx0zTV2WMD78Un736L0PwpUHwPwKBU0BkI3qAke/n+wdU/2oCwBmSF/hJSfnBYRJRLCgdAJzxFByElIPLVoq1MV61nPH0RwI89AfjX88noJ6Yx2kovF08dFoSFsRFsCUEAmBohKYQldbVTSp4hhL6wUpZ967+1e+cFSolRsVpmQeiLp4fXnjGCoKx2bQ7JFVSNhxqURHgB0F1EvfqICCYB/iHVeywvP9ydfgMUfwpNPctN1zfnh6M/az5cKZErcwhSmhFYnQwc5CH8AKj0wIQVIk7YypR2xJLh7vQEFFcjAbg7Pxxth1iBb38SKtcQz7yAhgAgcju9D/RN1sVys1EAt3an/6EUn/c9W8qvCf57ejj6gn215hrTLiT4+uag7Ce8sSAEgFoNFdOEt3ZPbks1e0oP5kfXjDtpBw3Fpwu4OnDqHAjFndOj0Y7/oe4RpkTD9Y1uAFCIVazRYiNVPfLD6UP5AEnnxrIzbL7721FxBkz5rAkA+KwqAIDmaXpaPs6U44gtw/H0XwC+GLk6/z2fjL7kcEHqoRGvuwiRL7sgf8ISAIDE0Q+K7K6JOk6vWOPLxevTY6JQEX3KoBR37ltcioPkW4uI204Q1o8Y1VopCumJ1edXtXmLFWyNTy5RVOe5fKov/k5ALp9Otu+pow1nFsQ5NPduHquu5uW1ADbQUHyL2m6LShB3neUm6KlVg8TVM54+D4KfBqmf4pfzo9HPjO5HKQryM2MidymBhmIs0wSWaMIAMJ84jHZHKpC85KvSzZ2x4OQXADUqdqVs8vx8sv3zIN9fnjnDmZiS+v22tKBU7hP/Y/gzggDgVmA/9rmPQbYXcozHRvmTg7L7WOrD13//WEbOmNV8F8CXS2X8E8Afcjp4+b2jx9+2WYkS/JfuJuUgib0YF678wlVGfJwVwLL5YgPCdfYqpRzNpr21+9pX2X9PD5/4m+81nOVoPc5Zg7G7LxCn/GgAqpd0NmQsPVNfemYrFfsUG/L3kJK3jw/kab16+yG2eUZZgOT7VgerbU14qYHtK/naSsUhCvaNCek1m9xQGNEgftWL800GYGkNfiA0/VCQx+5Ptt/RUkT9/FetvJzHLjVI2pry5hP9dmwDDo37FkayC7JmGO6rBpSvlYcr2DU17FNeVaMGyjrXBbhcj0KFZA33EK6QtecdomzTmNoWoK3iim9DMkaIiiVmVeQpURlvAnhVJeEaX1gkZTHiLvB9AN9ZjaUfAeQrkcoqlE7BsibpfovI5xiHNw6AKuXi+ORRAmpNDZt4ibaeQZH/4P5k53dtPb9RF2SbpBLc/gqajzmtnN+YtWSksa+HuICmdVEkCgJDT96UoXYM8k24dQvwpXfLYM6CJftUVEFC2JVmzYBSsNxeB1DUhgzX1SznIZcqajegPgEACPcuBNZHlspQs6KqdMAGiP5eIO1qBzQQdz45tqPlU7Dv761agJaFpBS65HsbAP8RJfFmrujqppa21uyBf7IASHiZEFohe8mQ3a5PGfw56r4hYdGEyKnGtGsBigvxteesgbw47ireoCXfF2QqFNZQ3Dm9LYXn0cG3ZalgmA5qV5f5GfiqtbKX83NQW7KAejUT7h5MQRn4NiiGAmC1M5f+rgiHEzU29Jfj64PMgV5jKtpuDJBZdbVXphBs9evLUM/FiZj319V40ggTq6EpYtU5toBW3IMMVUMl4v66GosFGLKdj9iZVrnCmXbVseKCzsltKU1dV+NgZfCzwxKrgasynTajNmZq7CdCNmTtBuGIZrd1E2akfcgB18q4Rnw100SdCVFk6phWASgCmnh1cVwcMB8IND/DDkKcS7JRV1IV7Pte+wAYNk++45xW1kVANbXMkNQWo/XWdMX3yxeLBMjzKdj399YB0K2As5G0W9CFX7gw9WejWHieX+rgRDI2L5HDZKJf1imd+BS/lmJcJcR6HT0n3Lp+vIE9Ic5tOTZUBp045LccfNcKALcC/QcSfItkv4lLMZJ+wmRNymcKWIsLWlpC2O+5BHNNfQhK1lBkU4yp4aCgNPO7NTHzWisAEhCs91t9hCtrYiafOpZbBfvw/jP/Ka17rj5xqpyQ73UCQMjEPitjegA6RroHoAegYw10LL63gB6AjjXQsfjeAnoAOtZAx+J7C+gB6FgDHYvvLaAHoGMNdCy+t4AegI410LH43gI6BuD/3XB/yg+9JKgAAAAASUVORK5CYII="/>
-        </div>  
-    </div>
-
-
-    <section id="aboutme">
+      <section id="aboutme">
         <div class="text-lore">
-          <h4>Sobre Mi 🧑‍💻</h4>
+          <h4>About Me 🧑‍💻</h4>
             <div class="div-img">
               <img src="img/foto-carnet.jpeg" alt="" class="img-me">
             </div>
-              <p>¡Hola! Mi nombre es Joel Vega, tengo 18 años y soy de <span>Buenos Aires, Argentina</span>. Estoy cursando la carrera de Desarrollo Frontend con React JS en Coderhouse. Durante este tiempo, he adquirido conocimientos sólidos en <span>HTML, CSS, Bootstrap, JavaScript y React JS</span>, lo que me permite crear interfaces web modernas, funcionales y visualmente atractivas.</p>
-              <p>Soy una persona apasionada por la tecnología y el aprendizaje constante. Me gustan los desafíos, ya que creo que son oportunidades para crecer tanto personal como profesionalmente. <span>Mi objetivo a corto plazo es adentrarme en el mundo del Desarrollo Backend</span>, ya que es el área que más me motiva y donde quiero especializarme en el <span>Futuro</span>.</p>
-              <p>Estoy comprometido con seguir aprendiendo y perfeccionando mis habilidades para construir una carrera profesional destacada en el desarrollo web. ¡Estoy entusiasmado por lo que viene y dispuesto a dar lo mejor de mí en cada proyecto!</p>
+              <p>Hello! My name is Joel Vega, I am 19 years old and I am from <span>Buenos Aires, Argentina</span>. Student of Carreer Systems<span>(UNLU)</span>, Frontend Development <span>(Coderhouse)</span> and English <span>(1st Year Blooming Language Institute)</span></p>
+              <p>Committed to continuing to learn and hone my skills to build an outstanding professional career in technology. I'm excited for what's to come and willing to give my best to every project!</p>
         </div>
-    </section>
-    <hr class="border border-primary border-1 opacity-75">
+      </section>
 
-    <div class="text-contact">
-      <h5>Contactame</h5>
-    </div>
+      </main>
 
-    <div id="form">
+      <hr class="border border-primary border-1 opacity-75">
+
+      <div class="text-contact">
+        <h5>Contact</h5>
+      </div>
+
+      <div id="form">
         <div class="mb-3">
           <label for="exampleFormControlInput1"></label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name and Surname">
           <label for="exampleFormControlInput1" class="form-label"></label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="tucorreo@aqui.com">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="youremail@here.com">
         </div>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label"></label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje..."></textarea>
-          <input class="btn btn-primary" type="submit" value="Enviar">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message..."></textarea>
+          <input class="btn btn-primary" type="submit" value="Submit">
+        </div>
       </div>
-    </div>
 
 
-    <footer>
-      <div class="pie">
-          <p>Todos los Derechos Reservados - 2025</p>
-          <p>-creado y diseñado por Joel B. Vega-</p>
+      <footer>
+        <div class="pie">
+          <p>&copy;All Rights Reserved - 2025</p>
+          <p>-created and designed by Joel B. Vega-</p>
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArVJREFUWEfdWG2O0zAUHGf3HnRvkX+kR0CBfwTak7CcZFvCP4g4wpZ/uQXhHm0MttPEfnn+SLdCFZVWWqmxPZ55M++lAjf2ETeGB/8HoHzzY4W+30DK14BYAVB/nWFbdhDiJ/r+0H59d1iqwCKG8g/NIyQ+LTikg8C+/VI+pq5JApS//1ZAZE8DE6l72891kP02hbEooLxqNgAUGPcAgb2SBff3Xbt702kZ1ed4XEFkH/9KqNbN1sTYCgLKq0YBsTdOlmCqMyKxwOcQKC+gOTPy0NZv10v10sBOvaq76WIBUCygoWaep8MvA3Nez7DlrSkeUPX9GRDFYOMgM+Nh2vFQB3Vc8RqmTk/TvujaunygjM8AUanauuRBhyOArbVBvl8WiG1blzsbFAdILTCOAWYLmJv6y+oue1AOtB8gF56x5ABKYSd35NRHaTYg8QqQK0uS2WXUwzOWZL+2JaaAbJvv2rrcOrejMjFu0Qcej6tQCDpxQvYggOxiZuSqGjkCJDdbEgeui10HU4am+iH6kyhgHZIKisjm7EUBjQxQd5H6msmZCoapowsBmQY7hOXLglKDsuS3L++vIVIjIZqXsLOQIauow4DYjEoF5sofKmrX1jHbh9K4oAlMwtEbL65kpjOfo33mJE9KqyQ+QOD3MNKaHhjo6HnVeN3MtI5IFhnQqrjP7cWvFJNVsW4Qa64d7rL1rB+NQ753vmbHi8uaa+KYMLpF/XPqC4iBsSzb0QuMc5HbB9PGD32Qkzl6uxcFockdpxQAT+tZMMKClS9mdY8R2EnAeCHwYd7Dkod8zQo/xAXZjr8G8Zsaq8t+rw5Wo4bzGpRlheeF0svMmZcoICvq06zOM369F8XRIZPV1UtgPIPMwkUSR2vIV17ujw16G5XO//7HhpijrvF9Ug1d46DUPW4O0B+MZfQ0oNwPtAAAAABJRU5ErkJggg=="/>
-      </div>
-    </footer>
+        </div>
+      </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

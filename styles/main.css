@@ -8,56 +8,46 @@
 }
 
 /* GENERAL */
-
 body{
     height: 100vh;
-    background: #212529;
+    background: #0C0C0C;
 }
+
+.bg-h{
+    background-image: linear-gradient(to right, rgb(0 0 0 / .70), rgb(0 0 0 / .70)), url('../img/bg-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* GENERAL */
+
+/* ANIMACION IMG */
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+img{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+/* ANIMACION IMG */
+
 
 /* START STYLES HEADER */
-
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 30px;
-    position: fixed;
-}
-
-
-.navbar h2{
-    color: #385DAD;
-    font-weight: 700;
-    font-size: 40px;
-    padding-left: 100px;
-}
-
-.navbar ul{
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-.navbar ul li{
-    list-style: none;
-}
-
-.navbar ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 500;
-    margin-right: 95px;
-}
-
-div.navbar ul li a:hover{
-    color: #385DAD;
-}
-
-/* END STYLES HEADER */
-
-/* START STYLES MAIN */
 /* ABOUT ME */
 
 .about{
@@ -75,6 +65,7 @@ div.navbar ul li a:hover{
 .about h5{
     font-weight: 600;
     font-size: 30px;
+    margin-top: 50px;
 }
 
 .parrafo h3{
@@ -82,29 +73,23 @@ div.navbar ul li a:hover{
     font-size: 40px;
 }
 
-.parrafo p{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-weight: 500;
-    font-size: 25px;
-}
-
 .name{
+    font-weight: 700;
     color: #385DAD;
 }
 
 .nametwo{
+    font-weight: 700;
     color: #385DAD;
     text-decoration: underline;
 }
 
+/* BOTON DESCARGAR */
 #boton-cv{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
-
+    margin-top: 30px;
 }
 
 #boton-cv a{
@@ -112,6 +97,9 @@ div.navbar ul li a:hover{
 }
 
 .download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #385DAD;
     color: #fff;
     padding: 10px 20px;
@@ -125,10 +113,46 @@ div.navbar ul li a:hover{
     background-color: #2980b9;
 }
 
+/* ANIMACION BOTON */
+.download{
+    opacity: 0;
+    animation: myAnimation 3s infinite;
+}
 
-/* ABOUT ME END */
+@keyframes myAnimation{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+/* ANIMACION BOTON */
 
-/* SKILLS STYLES START */
+/* BOTON DESCARGAR */
+
+/* FLECHA DE SCROLL */
+
+.scroll-down {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: white;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* FLECHA DE SCROLL */
+
+/* ABOUT ME HEADER */
+
+/* SECTIONS STYLES START */
 
 section{
     display: flex;
@@ -141,6 +165,7 @@ section h4{
     color: #fff;
     font-weight: 600;
     font-size: 30px;
+    margin-top: 50px;
 }
 
 .parrafo-skills {
@@ -153,12 +178,7 @@ section h4{
 }
 
 
-section p span{
-    color: #385DAD;
-    text-decoration: underline;
-}
-
-/* SKILLS STYLES END */
+/* SECTIONS STYLES END */
 
 /* ICONS SKILLS STYLES */
 
@@ -195,6 +215,65 @@ section p span{
 
 /* ICONS SKILLS STYLES */
 
+/* PROYECTOS */
+
+.pj-1 h5{
+    color: #fff;
+}
+
+.pj-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #18346e;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+  
+.pj-1-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+  
+.pj-1-img img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.pj-1 p{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.pj-1 a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.pj-1 a:hover{
+    text-decoration: underline  ;
+}
+  
+
+/* PROYECTOS */
+
 /* ABOUT ME STYLES */
 
 #aboutme{
@@ -218,13 +297,24 @@ section p span{
     gap: 20px;
     font-size: 16px;
     font-weight: 400;
-    margin-top: 80px;
+    background-color: #18346e;
+    padding: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.text-lore p span{
+    color: #00b4d8;
+    font-weight: 600;
 }
 
 .text-lore h4{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 
@@ -234,6 +324,7 @@ section p span{
     justify-content: center;
     align-self: center;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .div-img img{
@@ -385,11 +476,10 @@ footer img{
         font-size: 16px;
     }
 
-    #skills{
+    .icons-skills{
         flex-direction: column;
-        margin-right: 20px;
-        margin-left: 20px;
     }
+
 
     #aboutme{
         flex-direction: column;
