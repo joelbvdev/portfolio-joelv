@@ -84,6 +84,25 @@ img{
     text-decoration: underline;
 }
 
+.social-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-nav a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.social-nav a:hover{
+    text-decoration: underline;
+    text-decoration-color: #385DAD;
+}
+
 /* BOTON DESCARGAR */
 #boton-cv{
     display: flex;
