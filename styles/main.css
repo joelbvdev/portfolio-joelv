@@ -279,11 +279,20 @@ section h4{
 
 /* EXPERIENCE */
 
-#experience {
-    position: relative;
-    top: -465px; 
-    right: -460px; 
+.projects-experience-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;      /* distancia entre ambos */
+    margin-top: 120px;
+    width: 100%;
 }
+
+#projects,
+#experience {
+    flex: 0 0 auto;
+}
+
 
 
 .exp-box {
@@ -314,10 +323,7 @@ section h4{
 
 /* PROYECTOS */
 
-#projects {
-    position: relative;
-    left: -460px; 
-}
+
 
 .pj-1 h5{
     color: #fff;
@@ -658,3 +664,9 @@ body {
     overflow-x: clip;
 }
 
+.sections-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 120px;
+}
